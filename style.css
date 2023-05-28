@@ -1,0 +1,63 @@
+
+	/* Set background color of everything under navbar to yellow */
+	body {
+        font-family: 'BebasNeue', Arial, sans-serif;
+		background-color: #ffc400;
+	}
+
+
+    @font-face {
+        font-family: 'BebasNeue';
+        src: url('path/to/font.woff2') format('woff2'),
+             url('path/to/font.woff') format('woff');
+      }
+
+
+    
+    .text-container{
+        margin:0 auto;
+        padding:30px;
+        color:azure;
+    }
+
+    .text-container h1{
+        text-transform: uppercase ;
+        font-size: 36px;
+        margin-bottom: 20px;
+        padding: 0 auto;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .text-container h6{
+        font-size: 18px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .img-fluid{
+        cursor: pointer;
+    }
+
+    .hero {
+        background-image: url('path/to/hero-image.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px; /* Adjust the height as needed */
+        display: flex;
+        align-items: center;
+      }
+      
+
+   
+
+      .navbar-brand {
+        margin-left: auto;
+      }
+      
+    
+    
+    
+      
+      
+    
+

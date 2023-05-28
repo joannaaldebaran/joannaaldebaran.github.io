@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel = "stylesheet" href="style.css">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      
+      
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+    <div>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+  
+</nav>
+
+
+
+<section class="hero">
+<div class="text-container mt-3">
+    <h1 class="text-center">Showcasing My Web Development Knowledge</h1>
+    <h6 class="text-center">Click on the programming language images below to learn more about them.</h6>
+</div>
+</section>
+
+
+<div class="container">
+  <h3>Programming Languages I Know</h3>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="language-card">
+        <img src="js_html_css.png" alt="JavaScript" class="img-fluid" onclick="toggleText('js')">
+        <p id="jsText" class="hidden-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. </p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="language-card">
+        <img src="bootstrap.png" alt="boots" class="img-fluid" onclick="toggleText('bootstrap')">
+        <p id="bootstrapText" class="hidden-text">Bootstrap.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="language-card">
+        <img src="php.png" alt="Php" class="img-fluid" onclick="toggleText('php')">
+        <p id="phpText" class="hidden-text">PHP is a general-purpose scripting language geared toward web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. The PHP reference implementation is now produced by The PHP Group. PHP was originally an abbreviation of Personal Home Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="language-card">
+        <img src="ajax.png" alt="ajax" class="img-fluid" onclick="toggleText('ajax')">
+        <p id="ajaxText" class="hidden-text">jQuery is a JavaScript framework designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="language-card">
+        <img src="mysql.png" alt="mysql" class="img-fluid" onclick="toggleText('mysql')">
+        <p id="mysqlText" class="hidden-text">MySQL is an open-source relational database management system (RDBMS). A relational database organizes data into one or more data tables in which data may be related to each other; these relations help structure the data. SQL is a language programmers use to create, modify and extract data from the relational database, as well as control user access to the database. In addition to relational databases and SQL, an RDBMS like MySQL works with an operating system to implement a relational database in a computer's storage system, manages users, allows for network access and facilitates testing database integrity and creation of backups.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function toggleText(language) {
+    var textElement = document.getElementById(language + 'Text');
+    textElement.classList.toggle('hidden-text');
+  }
+</script>
+
+<style>
+  .hidden-text {
+    display: none;
+  }
+</style>
+
+
+
+  
+
+
+</body>
+</html>

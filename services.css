@@ -1,0 +1,22 @@
+.header {
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+        height: 400px;
+        font-size: 36px;
+        padding: 20px auto;
+      
+      
+  }
+
+  @font-face {
+    font-family: 'BebasNeue';
+    src: url('path/to/font.woff2') format('woff2'),
+         url('path/to/font.woff') format('woff');
+  }
+
+
+body{
+    background-color: #ffc400;
+    font-family: 'BebasNeue', Arial, sans-serif;
+}
